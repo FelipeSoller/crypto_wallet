@@ -1,13 +1,13 @@
 <h1>Seja Bem vindo!</h1>
 <h3>Aqui você poderá criar sua lista de criptmoedas</h3>
-<p><%= date_br(Date.today) %></p>
-
-<ul>
-  <li>
-    <%= link_to "Cadastro de Moedas", coins_path %>
-  </li>
-</ul>
-
 <p>
-  Você está em ambiente de <strong> <%= rails_environment %> </strong>
+  <%= date_br(Date.today) %>
 </p>
+
+<%= render "menu" %>
+
+  <p>
+    Você está em ambiente de <strong>
+      <%= rails_environment %>
+    </strong>
+  </p>
