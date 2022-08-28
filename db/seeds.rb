@@ -8,28 +8,31 @@
 
 puts 'CADASTRANDO MOEDAS'
 
-Coin.create!(
-  description: 'Bitcoin',
-  acronym: 'BTC',
-  url_image: 'https://cdn.pixabay.com/photo/2018/04/02/14/48/bitcoin-logo-3284066_960_720.png'
-)
+coins = [
+  {
+    description: 'Bitcoin',
+    acronym: 'BTC',
+    url_image: 'https://cdn.pixabay.com/photo/2018/04/02/14/48/bitcoin-logo-3284066_960_720.png'
+  },
+  {
+    description: 'Ethereum',
+    acronym: 'ETH',
+    url_image: 'https://spng.subpng.com/20180330/gkq/kisspng-ethereum-bitcoin-cryptocurrency-logo-tether-bitcoin-5abdfe01865749.6048300215224007695503.jpg'
+  },
+  {
+    description: 'Dash',
+    acronym: 'DASH',
+    url_image: 'https://seeklogo.com/images/D/dash-logo-4A14989CF5-seeklogo.com.png'
+  },
+  {
+    description: 'Dogecoin',
+    acronym: 'DOG',
+    url_image: 'https://upload.wikimedia.org/wikipedia/pt/d/d0/Dogecoin_Logo.png'
+  }
+]
 
-Coin.create!(
-  description: 'Ethereum',
-  acronym: 'ETH',
-  url_image: 'https://spng.subpng.com/20180330/gkq/kisspng-ethereum-bitcoin-cryptocurrency-logo-tether-bitcoin-5abdfe01865749.6048300215224007695503.jpg'
-)
-
-Coin.create!(
-  description: 'Dash',
-  acronym: 'DASH',
-  url_image: 'https://seeklogo.com/images/D/dash-logo-4A14989CF5-seeklogo.com.png'
-)
-
-Coin.create!(
-  description: 'Dogecoin',
-  acronym: 'DOG',
-  url_image: 'https://upload.wikimedia.org/wikipedia/pt/d/d0/Dogecoin_Logo.png'
-)
+coins.each do |coin|
+  Coin.find_or_create_by!(coin)
+end
 
 puts 'MOEDAS CADASTRADAS COM SUCESSO!'
