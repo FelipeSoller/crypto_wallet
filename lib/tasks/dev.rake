@@ -5,8 +5,8 @@ namespace :dev do
       show_spinner("Excluíndo Banco de Dados existente") { %x(rails db:drop) }
       show_spinner("Criando Banco de Dados") { %x(rails db:create) }
       show_spinner("Migrando tabelas do Banco de Dados") { %x(rails db:migrate) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts 'Você não está em ambiente de desenvolvimento'
     end
@@ -20,22 +20,26 @@ namespace :dev do
         {
           description: 'Bitcoin',
           acronym: 'BTC',
-          url_image: 'https://cdn.pixabay.com/photo/2018/04/02/14/48/bitcoin-logo-3284066_960_720.png'
+          url_image: 'https://cdn.pixabay.com/photo/2018/04/02/14/48/bitcoin-logo-3284066_960_720.png',
+          mining_type: MiningType.all.sample
         },
         {
           description: 'Ethereum',
           acronym: 'ETH',
-          url_image: 'https://spng.subpng.com/20180330/gkq/kisspng-ethereum-bitcoin-cryptocurrency-logo-tether-bitcoin-5abdfe01865749.6048300215224007695503.jpg'
+          url_image: 'https://spng.subpng.com/20180330/gkq/kisspng-ethereum-bitcoin-cryptocurrency-logo-tether-bitcoin-5abdfe01865749.6048300215224007695503.jpg',
+          mining_type: MiningType.all.sample
         },
         {
           description: 'Dash',
           acronym: 'DASH',
-          url_image: 'https://seeklogo.com/images/D/dash-logo-4A14989CF5-seeklogo.com.png'
+          url_image: 'https://seeklogo.com/images/D/dash-logo-4A14989CF5-seeklogo.com.png',
+          mining_type: MiningType.all.sample
         },
         {
           description: 'Dogecoin',
           acronym: 'DOG',
-          url_image: 'https://upload.wikimedia.org/wikipedia/pt/d/d0/Dogecoin_Logo.png'
+          url_image: 'https://upload.wikimedia.org/wikipedia/pt/d/d0/Dogecoin_Logo.png',
+          mining_type: MiningType.all.sample
         }
       ]
 
