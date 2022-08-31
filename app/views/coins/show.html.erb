@@ -10,9 +10,15 @@
   <%= @coin.acronym %>
 </p>
 
+
 <p>
   <strong>URL da Imagem:</strong>
   <%= image_tag @coin.url_image, size: "30x30" %>
+</p>
+
+<p>
+  <strong>Tipo de Mineração:</strong>
+  <%= @coin.mining_type.description %>
 </p>
 
 <%= link_to 'Editar', edit_coin_path(@coin) %> |
