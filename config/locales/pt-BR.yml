@@ -1,0 +1,30 @@
+pt-BR:
+  alerts:
+    are_you_sure: "Você tem certeza?"
+  columns:
+    acronym: "Sigla"
+    description: "Descrição"
+    image: "Imagem"
+    url_image: "URL da Imagem"
+    mining_type: "Tipo de Mineração"
+  links:
+    add_mining_types: "Cadastro de Tipos de Mineração"
+    add_coins: "Cadastro de Moedas"
+    back: "Voltar"
+    delete: "Excluir"
+    edit: "Editar"
+    new_coin: "Nova Moeda"
+    new_mining_type: "Novo Tipo de Mineração"
+    show: "Visualizar"
+  titles:
+    coins: "Moedas"
+    coins_edit: "Editar Moedas"
+    mining_types: "Tipos de Mineração"
+    mining_type_edit: "Editar Tipo de Mineração"
+    new_mining_type: "Novo Tipo de Mineração"
+  welcome_page:
+    title: "Seja Bem vindo!"
+    subtitle: "Aqui você poderá criar sua lista de criptomoedas"
+    language: "O idioma utilizado nesta aplicação é"
+    environment: "Você está no ambiente de"
+    date_today: "Hoje é dia"

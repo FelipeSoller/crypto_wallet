@@ -1,17 +1,22 @@
-<h1>Seja Bem vindo!</h1>
-<h3>Aqui você poderá criar sua lista de criptmoedas</h3>
-<p>A idioma utilizado nessa aplicação é
+<h1><%= t("welcome_page.title") %></h1>
+<h3><%= t("welcome_page.subtitle") %></h3>
+<p><%= t("welcome_page.language") %>
   <strong>
-    <%= locale(I18n.locale) %>
+    <%= locale %>
   </strong>
+</p>
+
 <p>
-  <%= Date.today %>
+  <%= t("welcome_page.date_today") %>
+  <strong>
+    <%= l(Date.today) %>
+  </strong>
 </p>
 
 <%= render "menu" %>
 
   <p>
-    Você está em ambiente de
+    <%= t("welcome_page.environment") %>
     <strong>
       <%= rails_environment %>
     </strong>
