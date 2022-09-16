@@ -5,11 +5,11 @@ module ApplicationHelper
 
   def rails_environment
     if Rails.env.development?
-      "Desenvolvimento"
+      t("environment.development")
     elsif Rails.env.production?
-      "Produção"
+      t("environment.production")
     else
-      "Teste"
+      t("environment.test")
     end
   end
 

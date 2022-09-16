@@ -30,5 +30,37 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  actual_locale: "Inglês"
-  hello: "Hello world"
+  actual_locale: "English"
+  alerts:
+    are_you_sure: "Are you sure?"
+  columns:
+    acronym: "Acronym"
+    description: "Description"
+    image: "Image"
+    url_image: "Image URL"
+    mining_type: "Mining Type"
+  environment:
+    development: "Development"
+    production: "Production"
+    test: "Test"
+  links:
+    add_mining_types: "Add Mining Types"
+    add_coins: "Add Coins"
+    back: "Back"
+    delete: "Delete"
+    edit: "Edit"
+    new_coin: "New Coin"
+    new_mining_type: "New Mining Type"
+    show: "Show"
+  titles:
+    coins: "Coins"
+    coins_edit: "Edit Coins"
+    mining_types: "Mining Types"
+    mining_type_edit: "Edit Mining Type"
+    new_mining_type: "New Mining Type"
+  welcome_page:
+    title: "Welcome!"
+    subtitle: "Here you can create your cryptocurrency list"
+    language: "The language used in this application is"
+    environment: "You are in the environment of"
+    date_today: "Today is"

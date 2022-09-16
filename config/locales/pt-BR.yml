@@ -8,6 +8,10 @@ pt-BR:
     image: "Imagem"
     url_image: "URL da Imagem"
     mining_type: "Tipo de Mineração"
+  environment:
+    development: "Desenvolvimento"
+    production: "Produção"
+    test: "Teste"
   links:
     add_mining_types: "Cadastro de Tipos de Mineração"
     add_coins: "Cadastro de Moedas"
