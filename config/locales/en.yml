@@ -30,7 +30,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  actual_locale: "English"
   alerts:
     are_you_sure: "Are you sure?"
   columns:
@@ -39,10 +38,6 @@ en:
     image: "Image"
     url_image: "Image URL"
     mining_type: "Mining Type"
-  environment:
-    development: "Development"
-    production: "Production"
-    test: "Test"
   links:
     add_mining_types: "Add Mining Types"
     add_coins: "Add Coins"
@@ -61,6 +56,7 @@ en:
   welcome_page:
     title: "Welcome!"
     subtitle: "Here you can create your cryptocurrency list"
+    options: "Begin selecting one of options below:"
     language: "The language used in this application is"
     environment: "You are in the environment of"
     date_today: "Today is"

@@ -1,30 +1,9 @@
-<p>
-  <%= link_to 'Português', root_path(locale: "pt-BR")  %>
-</p>
+<div class="h-100 p-5 text-white bg-dark rounded-3">
+  <h2><%= t("welcome_page.title") %></h2>
+  <p class="pb-3 border-bottom"><%= t("welcome_page.subtitle") %></p>
+  <p><%= t("welcome_page.options") %></p>
+  <%= render "menu" %>
+</div>
 
-<p>
-  <%= link_to 'English', root_path(locale: "en")  %>
-</p>
-<h1><%= t("welcome_page.title") %></h1>
-<h3><%= t("welcome_page.subtitle") %></h3>
-<p><%= t("welcome_page.language") %>
-  <strong>
-    <%= t("actual_locale") %>
-  </strong>
-</p>
 
-<p>
-  <%= t("welcome_page.date_today") %>
-  <strong>
-    <%= l(Date.today) %>
-  </strong>
-</p>
 
-<%= render "menu" %>
-
-  <p>
-    <%= t("welcome_page.environment") %>
-    <strong>
-      <%= rails_environment %>
-    </strong>
-  </p>

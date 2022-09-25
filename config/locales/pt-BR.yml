@@ -1,5 +1,4 @@
 pt-BR:
-  actual_locale: "Português"
   alerts:
     are_you_sure: "Você tem certeza?"
   columns:
@@ -8,10 +7,6 @@ pt-BR:
     image: "Imagem"
     url_image: "URL da Imagem"
     mining_type: "Tipo de Mineração"
-  environment:
-    development: "Desenvolvimento"
-    production: "Produção"
-    test: "Teste"
   links:
     add_mining_types: "Cadastro de Tipos de Mineração"
     add_coins: "Cadastro de Moedas"
@@ -30,6 +25,7 @@ pt-BR:
   welcome_page:
     title: "Seja Bem vindo!"
     subtitle: "Aqui você poderá criar sua lista de criptomoedas"
+    options: "Para começar, selecione uma das opções abaixo:"
     language: "O idioma utilizado nesta aplicação é"
     environment: "Você está no ambiente de"
     date_today: "Hoje é dia"
