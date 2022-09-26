@@ -56,7 +56,7 @@ en:
   welcome_page:
     title: "Welcome!"
     subtitle: "Here you can create your cryptocurrency list"
-    options: "Begin selecting one of options below:"
+    options: "Begin choosing an option below:"
     language: "The language used in this application is"
     environment: "You are in the environment of"
     date_today: "Today is"

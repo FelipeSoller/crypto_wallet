@@ -18,9 +18,10 @@ pt-BR:
     show: "Visualizar"
   titles:
     coins: "Moedas"
-    coins_edit: "Editar Moedas"
+    coin_edit: "Editar Moeda"
     mining_types: "Tipos de Mineração"
     mining_type_edit: "Editar Tipo de Mineração"
+    new_coin: "Nova Moeda"
     new_mining_type: "Novo Tipo de Mineração"
   welcome_page:
     title: "Seja Bem vindo!"

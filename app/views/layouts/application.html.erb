@@ -15,8 +15,9 @@
     <div class="container-fluid">
       <nav class="navbar bg-light">
         <form class="container-fluid justify-content-end">
-          <%= link_to 'Português', root_path(locale: "pt-BR"), class:"btn btn-sm btn-outline-secondary me-2", type:"button" %>
-          <%= link_to 'English', root_path(locale: "en"), class:"btn btn-sm btn-outline-secondary me-2", type:"button" %>
+          <%= link_to 'Home', root_path, class:"btn btn-sm btn-primary me-2", type:"button" %>
+          <%= link_to 'Português', root_path(locale: "pt-BR"), class:"btn btn-sm btn-outline-primary me-2", type:"button" %>
+          <%= link_to 'English', root_path(locale: "en"), class:"btn btn-sm btn-outline-primary me-2", type:"button" %>
         </form>
       </nav>
       <%= yield %>

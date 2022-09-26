@@ -1,6 +1,6 @@
-<h1><%= t("title.coins_edit") %></h1>
+<h1><%= t("titles.coin_edit") %></h1>
 
 <%= render 'form', coin: @coin %>
 
-<%= link_to t("links.show"), @coin %> |
-<%= link_to t("links.back"), coins_path %>
+<%= link_to t("links.show"), @coin, type:"button", class:"btn btn-primary mt-4" %>
+<%= link_to t("links.back"), coins_path, type:"button", class:"btn btn-primary mt-4" %>
